@@ -1,0 +1,113 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: goldenrod ;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.content{
+  background-color: darkgrey;
+  color: black;
+  padding: 1rem;
+  text-decoration: column;
+  justify-content: space-between;
+  
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  margin:0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    width: 200px;
+    display: none;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  #menu-toggle:checked + .hamburger + .nav ul {
+    display: flex;
+  }
+}
+
+.hero {
+  background-color: #222;
+  color:white;
+  padding: 100px 20px;
+  text-align: center;
+
+
+}
+
+.hero .her-content{
+  max-width: 600px;
+  margin:0 ;
+}
+.btn{
+  display: inline-block;
+  margin-top: 20px;
+  padding:12px 24px ;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
